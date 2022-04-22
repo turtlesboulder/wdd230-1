@@ -1,27 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en">    
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src = "navigation.js"></script>
+    <title>WDD 230 Assignment portal</title>
+    <meta name = "description" content = "A navigation portal for Landon Lee for the purpose of accessing all the assignments in the WDD230 class in a timely manner.">
+    <script src = "js/add_last_updated.js" defer></script>
+    <script src = "js/create_link_list.js" defer></script>
+    <link rel = "stylesheet" href = "css/colors.css">
+    <link rel = "stylesheet" href = "css/assignment_portal.css">
 </head>
-<body onload = "add_date()">
-    <h1>
-        I am a space hamster
-    </h1>
-    <h2>
-        Burritoes are food
-    </h2>
-    <img src = "images/selfie.jpg" alt = "A selfie I took in front of the temple." style = "width:200px; aspect-ratio: 2474/3496;">
-    <p id="to_be_manipulated">
-        This text is useless!
-    </p>
+<body id="page_content">
+    <header>
+        <img src = "images/selfie.jpg" alt = "A selfie of Landon in front of the Rexburg Idaho temple.">
+        <h2><em>Landon Lee</em></h2>
+    </header>
+    <main>
+        <h1>WDD 230 Assignment Portal</h1>
+        <nav>
+            <ul id="link_list"> 
+                <!-- This will be filled by create_link_list.js -->
+            </ul>
+        </nav>
+    </main>
+    <footer>
+        <ul>
+            <li id="copyright_box">
+                Don't look at me! I'm naked!
+            </li>
+            <li>
+                I am based in Rexburg, Idaho.
+            </li>
+            <li id="last_updated_box">
+                If you see this text, something has gone horribly wrong!
+            </li>
+        </ul>
+    </footer>
+    
 
-    <h3>Assignment links</h3>
-    <ul>
-        <li>(Currently empty...)</li>
-    </ul>
 </body> 
 </html>
