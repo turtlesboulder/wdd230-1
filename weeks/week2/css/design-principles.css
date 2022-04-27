@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cantata+One&family=Martel+Sans&display=swap');
+
+body{
+    padding: 20px;
+    font-family: "Martel Sans", sans-serif;
+    background-color: var(--lightGreen1);
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: "Cantana One", serif;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+header{
+    width: 100%;
+}
+footer{
+    width: 100%;
+}
+@media screen and (max-width: 700px){
+    .grid_container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }  
+}
+@media screen and (min-width: 701px){
+    .grid_container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (min-width: 1051px){
+    .grid_container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.principle{
+    margin: 10px;
+    padding: 10px;
+    padding-top: 0px;
+    max-width: 320px;
+    background-color: var(--lightGreen2);
+}
+.principle ul{
+    list-style: '';
+}
+.principle h2{
+    text-align: center;
+    width: 280px;
+    padding: 20px;
+    background-color: var(--lightGreen3);
+    font-size: 16pt;
+}
+.screenshot{
+    padding-left: 10px;
+    width: 300px;
+    aspect-ratio: 540/1070;
+    object-fit: cover;
+}
+
+/* header, footer{
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px; 
+} */
+
+header div, footer div{
+    margin: 0 auto;
+    background-color: var(--darkGreen2);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+footer ul{
+    list-style: '';
+}
