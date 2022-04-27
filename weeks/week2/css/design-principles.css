@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cantata+One&family=Martel+Sans&display=swap');
 
 body{
-    padding: 30px;
+    padding: 40px;
     font-family: "Martel Sans", sans-serif;
     background-color: var(--lightGreen1);
 }
@@ -25,6 +25,7 @@ footer{
 .grid_container{
     margin-top: 20px;
     margin-bottom: 20px;
+    gap: 10px;
 }
 
 .principle{
@@ -66,19 +67,19 @@ header div, footer div{
 footer ul{
     list-style: '';
 }
-@media screen and (max-width: 800px){
+@media screen and (max-width: 850px){
     .grid_container{
         display: grid;
         grid-template-columns: 1fr;
     }  
 }
-@media screen and (min-width: 801px){
+@media screen and (min-width: 851px){
     .grid_container{
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 }
-@media screen and (min-width: 1101px){
+@media screen and (min-width: 1201px){
     .grid_container{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
