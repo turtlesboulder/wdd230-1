@@ -46,6 +46,7 @@ footer{
     padding-top: 0px;
     max-width: 320px;
     background-color: var(--lightGreen2);
+    line-height: 125%;
 }
 .principle ul{
     list-style: '';
@@ -56,6 +57,9 @@ footer{
     padding: 20px;
     background-color: var(--lightGreen3);
     font-size: 16pt;
+}
+.principle p{
+    padding:5px;
 }
 .screenshot{
     padding-left: 10px;
