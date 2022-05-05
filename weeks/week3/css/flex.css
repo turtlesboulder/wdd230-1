@@ -1,0 +1,36 @@
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+img{
+    border: 1px solid black;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+nav ul li{
+    list-style-type: none;
+    padding: 20px 51px;
+}
+a{
+    color: darkgreen;
+}
+a:hover{
+    color: darkgreen;
+    background-color:aquamarine;
+}
+a:visited{
+    color: darkgreen;
+}
+@media screen and (min-width: 900px){
+   nav ul{
+        flex-direction: row;
+    }
+}

@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Rasa&display=swap');
+body{
+    margin: 40px;
+}
+.demo1{
+    font-family: Rasa, serif;
+}
+.demo2{
+    font-family: 'Baloo Thambi', sans-serif;
+}
+p{
+    margin-bottom: 40px;
+}

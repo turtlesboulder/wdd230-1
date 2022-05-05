@@ -1,0 +1,38 @@
+:root{
+    --white: #ffffff;
+    --black: #000000;
+    --darkOrange: #402000;
+    --lightOrange: #f5af4e;
+    --lightBlue: #9090ff;
+}
+body{
+    margin: 40px;
+}
+#black_on_white{
+    color: var(--black);
+    background-color: var(--white);
+}
+
+#white_on_brown{
+    color: var(--white);
+    background-color: var(--darkOrange);
+}
+p{
+    padding: 10px;
+}
+
+#accent_1, #accent_2{
+    width: 80px;
+    height: 40px;
+    border: 2px solid black;
+}
+#accent_1{
+    background-color: var(--lightOrange);
+}
+#accent_2{
+    background-color: var(--lightBlue);
+}
+h2{
+    margin-bottom: 5px;
+    margin-top: 25px;
+}
