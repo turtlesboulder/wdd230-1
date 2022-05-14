@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Rasa&display=swap');
+
+body{
+    font-family: 'Baloo Thambi', sans-serif;
+    margin: 40px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: Rasa, serif;
+}
+#social_media_images{
+    padding: 10px;
+    margin-right: 10px;
+}
+#social_media_images img{
+    width: 30px;
+    height: 30px;
+}
+#social_media_images a{
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+}
+
+
+
+ul{
+    list-style: none;
+    padding-left: 0px;
+}
+
+#main_grid div{
+    border: 1px solid lightgray;
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+/* HEADER */
+header{
+    background-color: var(--darkOrange);
+    color: white;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 1fr;
+    grid-template-rows: 80px 50px;
+}
+.logo{
+    width: 80px;
+    grid-column: 1;
+    grid-row: 1;
+}
+header button{
+    background-color: transparent;
+    color: white;
+    font-size: 200%;
+    border: none;
+    grid-column: -1;
+    grid-row: 1;
+}
+nav{
+    display: none;
+}
+#current_date_header{
+    grid-row: 2;
+    grid-column: 2/5;
+    height: 1rem;
+    text-align: center;
+    padding: 10px;
+}
+header button:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+#title{
+    text-align: center;
+    grid-row: 1;
+    grid-column: 2/5;
+    margin-bottom: 0px;
+    font-family: Rasa, serif;
+    font-size: 2rem;
+}
+
+footer{
+    background-color: var(--darkOrange);
+    color: white;
+    display: grid;
+    grid-template-columns:  80px 2fr 1fr 10px;
+    grid-template-rows: 120px 1fr;
+}
+footer .logo{
+    grid-column: 1;
+    grid-row: 1;
+    padding: 20px;
+    width: 80px;
+}
+#footer_text{
+    grid-column: 1/-1;
+    grid-row: 2;
+    list-style: '';
+    margin-left: 0px;
+    padding: 20px;
+    text-align: center;
+}
+footer h2{
+    grid-column: 2;
+    grid-row: 1;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2rem;
+    padding-left: 20px;
+}
+footer ul{
+    margin: 0px;
+    padding: 0px;
+    margin-top: 40px;
+    list-style: none;
+    grid-row: 1;
+    grid-column: 3;
+    text-align: center;
+}
+footer ul li{
+    padding: 5px;
+}
+footer ul li a:hover{
+    text-decoration: underline;
+
+}

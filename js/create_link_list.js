@@ -1,5 +1,5 @@
 let link_list = document.querySelector("#link_list");
-let week_lower_bound = 4;
+let week_lower_bound = 5;
 let week_upper_bound = 13;
 
 for (let week_num = week_lower_bound; week_num <= week_upper_bound; week_num++){

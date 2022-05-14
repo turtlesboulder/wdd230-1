@@ -1,0 +1,46 @@
+@media screen and (max-width: 850px){
+    #nav a{
+        color: white;
+    }
+    #nav a:hover{
+        color: white;   
+    }
+    #main_grid{
+        grid-template-columns: 1fr;
+        height: 1300px;
+    }
+    #main_grid div{
+        height: 120px;
+    }
+    #main_grid #spotlights{
+        height: 470px;
+    }
+
+    /* HEADER */
+
+
+    #nav.hamburger_show{
+        display: block;
+        background-color: var(--darkOrange2);
+        position: absolute;
+        top: 140px;
+        right: 40px;
+        border: 3px solid black;
+    }
+    #nav.hamburger_show ul{
+        padding: 10px;
+        margin: 0px;
+    }
+    #nav.hamburger_show ul li{
+        margin: 10px 0px;
+        border: 1px solid black;
+        padding: 5px;
+        width: 10rem;
+    }
+    #nav.hamburger_show ul li a{
+        text-decoration: none;
+    }
+    #nav.hamburger_show ul li:hover{
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+}
