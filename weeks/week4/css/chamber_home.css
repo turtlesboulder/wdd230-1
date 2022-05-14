@@ -119,7 +119,7 @@ footer ul{
     grid-column: 3;
     text-align: center;
 }
-footer ul li{
+footer ul li{   
     padding: 5px;
 }
 footer ul li a:hover{
