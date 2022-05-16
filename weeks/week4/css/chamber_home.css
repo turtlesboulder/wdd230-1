@@ -88,6 +88,12 @@ footer{
     grid-template-columns:  80px 2fr 1fr 10px;
     grid-template-rows: 120px 1fr;
 }
+footer a{
+    color: white;
+}
+footer a:visited{
+    color: white;
+}
 footer .logo{
     grid-column: 1;
     grid-row: 1;
@@ -107,7 +113,6 @@ footer h2{
     grid-row: 1;
     text-align: center;
     margin-top: 50px;
-    font-size: 2rem;
     padding-left: 20px;
 }
 footer ul{

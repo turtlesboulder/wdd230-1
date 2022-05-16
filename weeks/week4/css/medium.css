@@ -76,4 +76,7 @@
     #nav a:hover{
         color: white;   
     }
+    #footer_name{
+        font-size: 2.5rem;
+    }
 }
