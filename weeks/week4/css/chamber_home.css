@@ -45,6 +45,7 @@ header{
     display: grid;
     grid-template-columns: 1fr 3fr 1fr 1fr;
     grid-template-rows: 80px 50px;
+    margin-bottom: 20px;
 }
 .logo{
     width: 80px;
@@ -130,4 +131,46 @@ footer ul li{
 footer ul li a:hover{
     text-decoration: underline;
 
+}
+.banner_no_show{
+    display: none;
+}
+#notification_banner{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width: 100vw;
+    background-color: var(--darkOrange3);
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+#hero img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#hero h2{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: white;
+    float: none;
+    margin-top: 0px;
+}
+#hero a{
+    position: absolute;
+    background-color: var(--lightBlue);
+    color: black;
+    float: none;
+    text-decoration: none;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 8px;
+    font-size: 20px;         
+    bottom: 30px;
+    right: 30px;
+}
+#hero{
+    position: relative;
 }

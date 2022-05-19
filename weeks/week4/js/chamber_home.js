@@ -9,6 +9,11 @@ function updateDate(){
     let weekdays = ["Sunday", "Monday", "Teusday", "Wednesday", "Thursday", "Friday", "Saturday"]
     weekday = weekdays[weekday];
 
+    if (weekday == "Monday" || weekday == "Teusday"){
+        let banner_node = document.querySelector("#notification_banner");
+        banner_node.removeAttribute("class");
+    }
+
     let year = currentDate.getFullYear()
     let day = currentDate.getDate()
     let date_string = `The current date is ${weekday}, ${day} ${month} ${year}`
@@ -40,6 +45,7 @@ function do_footer(){
     let minutes = modified_date.getMinutes()
     text_container.innerHTML = `© ${year} Hacker Valley Chamber by Landon Lee. | WDD 230 Project | Last modified ${month} ${day}, ${year} at ${hour}:${minutes}.`
 }
+
 
 function init(){
     updateDate();
