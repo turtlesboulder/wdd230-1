@@ -12,8 +12,8 @@
         grid-row: 1;
         grid-column: 1/7;
     }
-    #main_grid div{
-        height: 120px;
+    #main_grid .main_node{
+        height: 200px;
     }
     #event{
         grid-row: 5;
@@ -32,10 +32,11 @@
         grid-row: 3;
         grid-column: 1/7;
         flex-direction: row;
+        justify-content:space-evenly;
     }
-    #spotlights div{
-        width: 65%;
-        height: 65%;
+
+    #spotlights .spotlight_node{
+        height: auto;
     }
     #spotlights #spotlight3{
         display: none;

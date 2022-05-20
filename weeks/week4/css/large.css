@@ -10,8 +10,8 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     }
-    #main_grid div{
-        height: 120px;
+    #main_grid .main_node{
+        height: 190px;
     }
     /* NOT DONE YET! */
     #main_grid #hero{
@@ -41,7 +41,7 @@
         flex-direction:column;
     }
     #main_grid #spotlight3{
-        display: block;
+        display: flex;
     }
     
     #join{

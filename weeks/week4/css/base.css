@@ -7,13 +7,19 @@
     }
     #main_grid{
         grid-template-columns: 1fr;
-        height: 1300px;
     }
-    #main_grid div{
-        height: 120px;
+    /* #main_grid  .main_node{
+        height: auto
+    } */
+    #main_grid #join{
+        display: none;
     }
     #main_grid #spotlights{
-        height: 470px;
+        height: auto;
+        width: auto;
+    }
+    #spotlight3{
+        display: none;
     }
 
     /* HEADER */
@@ -26,6 +32,7 @@
         top: 140px;
         right: 40px;
         border: 3px solid black;
+        z-index: 100;
     }
     #nav.hamburger_show ul{
         padding: 10px;
