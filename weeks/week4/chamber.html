@@ -10,8 +10,10 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
     
     <script src="js/chamber_home.js" defer></script>
+    <script src="js/windchill.js" defer></script>
     <title>Hacker Valley Chamber Home</title>
 </head>
 <body>
@@ -51,7 +53,7 @@
                 
             </div>
         </nav>
-        <img class="logo" src="images/logo2.png" alt="Hacker Valley Chamber Logo">
+        <img class="logo" src="images/logo2.webp" alt="Hacker Valley Chamber Logo">
         <h1 id="title">
             Hacker Valley Chamber
         </h1>
@@ -64,7 +66,11 @@
             <div id="hero" class="main_node">
                 <h2>Welcome to Hacker Valley</h2>
                 <a href="../week3/typography.html">Earn Money Today!</a>
-                <img src="images/money.png" alt="A pile of 100 dollar bills with Benjamin Franklin smiling at you.">
+                <picture id="hero_image">
+                    <source media ="(min-width: 1201px)" srcset="images/moneylarge.png">
+                    <source media="(min-width: 851px)" srcset="images/moneymedium.png">
+                    <img src="images/moneysmall.png" alt="A pile of 100 dollar bills with Benjamin Franklin smiling at you.">
+                </picture>
             </div>
             <div id="event" class="main_node">
                 <h3>
@@ -80,15 +86,15 @@
             <div id="weather" class="main_node">
                 <h3>Weather</h3>
                 <img src="images/sun.png" alt="A picture of the sun">
-                <div id="temperature">16° C</div>
+                <div id="temperature"><span>10</span>° C</div>
                 <div id="weather_description"> Sunny </div>
                 <div id="wind">
                     <ul>
                         <li>
-                            Wind Speed: 7 km/h
+                            Wind Speed: <span id="wind_speed_num">5</span> km/h
                         </li>
                         <li>
-                            Wind Chill: 2° C
+                            Feels like: <span id="wind_chill_num"></span>° C
                         </li>
                     </ul>
                 </div>
@@ -140,7 +146,7 @@
         
     </main>
     <footer>
-        <img class="logo" src="images/logo2.png" alt="Hacker Valley Chamber Logo">
+        <img class="logo" src="images/logo2.webp" alt="Hacker Valley Chamber Logo">
         <h2 id="footer_name">Hacker Valley Chamber</h2>
         <ul>
             <li>

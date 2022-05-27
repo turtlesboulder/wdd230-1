@@ -46,7 +46,6 @@ function do_footer(){
     text_container.innerHTML = `© ${year} Hacker Valley Chamber by Landon Lee. | WDD 230 Project | Last modified ${month} ${day}, ${year} at ${hour}:${minutes}.`
 }
 
-
 function init(){
     updateDate();
     do_hamburger_functionality();
