@@ -1,0 +1,12 @@
+picture img[data-src]{
+    filter: blur(0.5em);
+}
+
+picture img{
+    display: block;
+    margin: 0 auto;
+    padding: 5px;
+    filter: blur(0em);
+    transition: filter 2s;
+}
+
