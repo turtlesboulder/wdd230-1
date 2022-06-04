@@ -22,18 +22,39 @@ function updateDate(){
 function do_hamburger_functionality(){
     let button = document.querySelector("#hamburger_button");
     let menu = document.querySelector("nav");
-    let main = document.querySelector("main");
+    menu.cla
+    let main = document.querySelector("body");
     button.addEventListener("click", () => {menu.classList.toggle("hamburger_show")})
     function remove_hamburger_menu_on_body_click(event){
-        let menu = document.querySelector("#hamburger_menu");
-        if (event.target.closest("nav") != document.querySelector("nav")){
-            menu.classList.remove("hamburger_show");
+        let menu = document.querySelector("#nav");
+        if ((event.target.closest("nav") != document.querySelector("nav")) && event.target.closest("button") != document.querySelector("#hamburger_button")){
+            menu.classList = ""
         }
     }
     main.addEventListener("click", remove_hamburger_menu_on_body_click, true);
 }
 
 function do_footer(){
+    // localstorage
+    let now_date = new Date()
+    let old_date = new Date(localStorage.getItem("lastVisited"));
+    localStorage.setItem('lastVisited', now_date)
+    if (old_date.getTime() != 0){
+        let time_elapsed = now_date.getTime() - old_date.getTime();
+        let days_elapsed = Math.round(time_elapsed/86400000)
+        let message = ""
+        if (days_elapsed == 1){
+            message = "Day ago"
+        }
+        else{
+            message = "Days ago"
+        }
+        document.querySelector(".visited").textContent = "Last Visited: " + (days_elapsed) + " " + message
+    }
+    else{
+        document.querySelector(".visited").textContent = "Welcome newcomer!"
+    }
+
     let modified_date = new Date(document.lastModified);
     let text_container = document.querySelector("#footer_text")
     let month = modified_date.getMonth()
