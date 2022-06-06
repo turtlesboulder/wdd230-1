@@ -41,7 +41,7 @@ function do_footer(){
     localStorage.setItem('lastVisited', now_date)
     if (old_date.getTime() != 0){
         let time_elapsed = now_date.getTime() - old_date.getTime();
-        let days_elapsed = Math.round(time_elapsed/86400000)
+        let days_elapsed = Math.round(time_elapsed/(1000 * 60 * 60 * 24))
         let message = ""
         if (days_elapsed == 1){
             message = "Day ago"

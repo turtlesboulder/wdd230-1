@@ -53,4 +53,12 @@
     footer h2{
         font-size: 1.5rem;
     }
+
+    #footer_text{
+        padding-bottom: 5px;
+    }
+
+    footer ul{
+        margin-top: 20px;
+    }
 }

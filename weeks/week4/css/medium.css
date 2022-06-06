@@ -81,4 +81,10 @@
     #footer_name{
         font-size: 2.5rem;
     }
+    #footer_text{
+        padding-bottom: 15px;
+    }
+    footer ul{
+        margin-top: 30px;
+    }
 }
