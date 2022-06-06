@@ -87,4 +87,8 @@
     footer ul{
         margin-top: 30px;
     }
+
+    article img:hover{
+        border: 2px solid black;
+    }
 }
