@@ -9,7 +9,13 @@ article img{
     width: 400px;
     height: 300px;
     object-fit: cover;
+    border: 2px solid white;
 }
+
+article img:hover{
+    border: 2px solid black;
+}
+
 
 article picture{
     display: flex;
