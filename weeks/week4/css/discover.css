@@ -12,9 +12,7 @@ article img{
     border: 2px solid white;
 }
 
-article img:hover{
-    border: 2px solid black;
-}
+
 
 
 article picture{
