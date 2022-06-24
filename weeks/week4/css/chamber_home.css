@@ -234,6 +234,7 @@ footer ul li a:hover{
     grid-row: 2;
     padding-top: 10px;
     padding-left: 10px;
+    width: 100px;
 }
 #weather #temperature{
     grid-column: 2;

@@ -62,4 +62,14 @@
         margin-top: 20px;
     }
 
+    #directory_table tr{
+        display: block;
+        margin: 10px;
+    }
+    #directory_table td{
+        display: block;
+        border: none;
+        width: auto;
+    }
+
 }
