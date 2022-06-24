@@ -5,8 +5,6 @@ const getWeather = async ()=>{
     const response = await fetch(apiURL);
     let jsObject = await response.json();
 
-    console.log(jsObject);
-
     let celciusTemp = Math.round((jsObject.main.temp - 273.15))
     document.querySelector('#temperature span').textContent = celciusTemp;
     const iconsrc= `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
