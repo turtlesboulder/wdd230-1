@@ -96,6 +96,6 @@
     }
 
     #directory_table{
-        display: auto;
+        display: table;
     }
 }
