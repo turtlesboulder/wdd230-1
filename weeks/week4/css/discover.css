@@ -3,6 +3,7 @@ article #image_flex_container{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin: 30px;
 }
 
 article img{
@@ -11,8 +12,6 @@ article img{
     object-fit: cover;
     border: 2px solid white;
 }
-
-
 
 
 article picture{

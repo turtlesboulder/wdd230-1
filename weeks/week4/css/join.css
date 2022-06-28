@@ -43,3 +43,8 @@ main{
     font-size: 4em;
     margin: 100px 50px;
 }
+textarea{
+    height: 5em;
+    padding: 5px;
+    font-family: inherit;
+}

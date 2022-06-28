@@ -159,13 +159,14 @@ footer ul li a:hover{
     color: white;
     float: none;
     margin-top: 0px;
+    font-size: 2em;
 }
 #hero a, #join a{
     background-color: var(--lightBlue);
     color: black;
     float: none;
     text-decoration: none;
-    padding: 5px;
+    padding: 8px 20px;
     border: 1px solid black;
     border-radius: 8px;
     font-size: 20px;         
@@ -277,9 +278,6 @@ footer ul li a:hover{
     justify-content: center;
     background-color: var(--darkOrange);
     color: white;
-}
-#join a{
-    padding: 8px 20px;
 }
 #join p{
     text-align: center;
