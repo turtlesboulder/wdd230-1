@@ -27,3 +27,8 @@ article picture{
     margin-top: 10px;
     text-align: center;
 }
+
+#headerPrompt{
+    text-align: center;
+    padding-top: 20px;  
+}
