@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/join.css">
     <link rel="stylesheet" href="css/contact.css">
     <link rel="shortcut icon" href="images/favicon.ico">
     
     <script src="js/chamber_home.js" defer></script>
-    <script src="../week10/js/weatherapi.js" defer></script>
     <title>Hacker Valley Chamber Home</title>
 </head>
 <body>
@@ -65,10 +65,66 @@
         </p>
     </header>
     <main>
-        <img src="images/warning.png" alt="Warning! Something is wrong!">
-        <h1>Oops! Page not found.</h1>
-        <p>The page you requested is not here... Were you looking for something else?</p>
-        <img src="images/warning.png" alt="Warning! Something is wrong!">
+        <h1>Thank you for getting in touch!</h2>
+        <form>
+            <div class="formElement">
+                <label for="fname">First Name *</label>
+                <input type="text" id="fname" name="first_name" required>
+            </div>
+            <div class="formElement">
+                <label for="lname">Last Name *</label>
+                <input type="text" id="lname" name="first_name" required>
+            </div>
+            <!-- How would you like us to respond? Email or text? -->
+            <!-- Implement this with javascript -->
+            <fieldset>
+                <legend>How would you like us to respond?</legend>
+                <div>
+                    <input type="radio" id="doEmail" name="respondMethod" value="Email">
+                    <label for="doEmail">Email</label>
+                </div>
+                <div>
+                    <input type="radio" id="doText" name="respondMethod" value="Text">
+                    <label for="doText">Text</label>
+                </div>
+            </fieldset>
+            <div class="formElement hidden" id="formEmail">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="1234@example.com">
+            </div>
+            <div class="formElement hidden" id="formPhoneNumber">
+                <label for="phoneNumber">Phone Number</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber">
+            </div>
+            <div class="formElement">
+                <label for="message">Message</label>
+                <textarea id="message" name="message"></textarea>
+            </div>
+            <button type="submit">Send</button>
+        </form>
+        <h2>Meet the Board of Directors</h2>
+        <p>Our board of directors works hard to ensure that the 
+            Hacker Valley Chamber runs smoothly. Thank you for your hard work!</p>
+        <div id="boardOfDirectors">
+            <div class="imageBox">
+                <img src="images/BuissnessmanfromUnsplash.jpg" alt="An image of Dennis Armstrong">
+                <p>Dennis Armstrong</p>
+            </div>
+            <div class="imageBox">
+                <img src="images/BuisinessmanfromUnsplash2.jpg" alt="An image of Nate Brown">
+                <p>Nate Brown</p>
+            </div>
+            <div class="imageBox">
+                <img src="images/BuisinesswomanfromUnsplash.jpg" alt="An image of Grace Merrill">
+                <p>Grace Merrill</p>
+            </div>
+            
+            
+            
+        </div>
+        <p id="disclaimer">
+            These are ficticious names and while the pictures are of real people (of course) the names are not theirs.
+        </p>
     </main>
     <footer>
         <img class="logo" src="images/logo2.webp" alt="Hacker Valley Chamber Logo">

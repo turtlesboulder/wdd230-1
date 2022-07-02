@@ -5,3 +5,31 @@ main{
     align-items: center;
     justify-content: center;
 }
+
+#boardOfDirectors img{
+    object-fit: cover;
+    width: 200px;
+    height: 400px;
+    box-shadow: 0px 0px 3px 3px #a0a0a0;
+}
+form{
+    margin: 40px;
+}
+
+#boardOfDirectors{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 20px;
+}
+
+#disclaimer{
+    color: #909090;
+}
+
+.imageBox p{
+    text-align: center;
+}

@@ -1,13 +1,21 @@
 form input{
     display: block;
     padding: 3px;
+    font-size: 1em;
 }   
+
 #join_prompt{
     text-align: center;
     margin: 30px;
 }
 .formElement{
     padding: 10px;
+}
+.formElement input{
+    width: 100%;
+}
+form fieldset{
+    margin-left: 10px;
 }
 form fieldset input{
     display: inline;
@@ -32,7 +40,7 @@ form input:required:valid{
     flex-wrap: wrap;
     justify-content: space-evenly;
     vertical-align: center;
-    gap: 20px;
+    gap: 40px;
 }
 main{
     margin: 20px;
@@ -47,4 +55,19 @@ textarea{
     height: 5em;
     padding: 5px;
     font-family: inherit;
+    width: 100%;
+    font-size: 1em;
+}
+
+button{
+    background-color: var(--lightBlue);
+    color: black;
+    padding: 8px 20px;
+    border: 1px solid black;
+    border-radius: 8px;
+    font-size: 20px;   
+    margin-left: 10px; 
+}
+button:hover{
+    background-color: lightblue;
 }

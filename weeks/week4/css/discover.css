@@ -10,7 +10,8 @@ article img{
     width: 400px;
     height: 300px;
     object-fit: cover;
-    border: 2px solid white;
+    border: 2px solid #c0c0c0;
+    box-shadow: 0px 0px 4px 4px #a0a0a0;
 }
 
 
