@@ -10,14 +10,14 @@ function doDrag(node){
             plant.style.top = (event.pageY - PLANTHEIGHT/2) + "px";
             plant.style.zIndex = 999
         }
-        plant.addEventListener("mousemove", move)
+        document.addEventListener("mousemove", move)
         let stop = ()=>{
-            plant.removeEventListener("mousemove", move)
+            document.removeEventListener("mousemove", move)
             plant.canChange = true
             plant.style.zIndex = 1
-            plant.removeEventListener("mouseup", stop)
+            document.removeEventListener("mouseup", stop)
         }
-        plant.addEventListener("mouseup", stop)
+        document.addEventListener("mouseup", stop)
        }
     }
     node.addEventListener("mousedown", runner)

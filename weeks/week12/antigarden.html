@@ -7,7 +7,9 @@
     <meta name="description" content="Zen out in the virtual garden! Treat yourself to some relaxation.">
     <link rel="stylesheet" href="css/headerfooter.css">
     <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/antigarden.css">
     <script src="js/headerfooter.js" defer></script>
+    <script src="js/antigarden.js" defer></script>
     <title>Virtual Garden</title>
 </head>
 <body>
@@ -15,7 +17,40 @@
 
     </header>
     <main>
-
+        <div id="call-to-action">
+            <h2>SIGN UP FOR OUR NEWSLETTER!</h2>
+            <div id="button-container">
+                <button id="button1" class="unhelpfulbutton">Yes</button>
+                <button id="button2" class="unhelpfulbutton">No</button></div>
+        </div>
+        <div id="form-container">
+            <form action="" method="GET" autocomplete="off">
+                <label for="name">What is your name?</label>
+                <input type="text" name="Name" id="name" required>
+                
+                <label for="address">What is your address?</label>
+                <input type="text" name="address" id="address" required>
+    
+                <label for="email">What is your email?</label>
+                <input type="email" name="email" id="email" required>
+    
+                <label for="mother-maiden-name">What is your mother's maiden name?</label>
+                <input type="text" name="mother-maiden-name" id="mother-maiden-name" required>
+    
+                <label for="ssn">What is your social security number?</label>
+                <input type="text" name="ssn" id="ssn"required>
+                
+                <label for="frequency">How often would you like to recieve our newsletter?</label>
+                <select name="frequency" id="frequency">
+                <option value="daily">Daily</option>
+                <option value="daily">Daily</option>
+                <option value="daily">Daily</option>
+                <option value="daily">Daily</option>
+                </select>
+                <button type="submit">Give us all your personal details</button>
+            </form>
+        </div>
+        
     </main>
     <footer>
 
