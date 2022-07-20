@@ -1,0 +1,13 @@
+main img{
+    width: 120px;
+    height: 220px;
+    object-fit: cover;
+    position: absolute;
+}
+main{
+    height: 1000px;
+}
+main p{
+    font-size: 1.2em;
+    text-align: center;
+}

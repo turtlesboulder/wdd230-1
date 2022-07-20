@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Lusitana&family=Niramit:wght@300&display=swap');
+
+html{
+    font-family: "Niramit", sans-serif;
+}
+h1{
+    font-family: "Lobster", serif;
+}
+
+h2, h3, h4, h5, h6{
+    font-family: "Lusitana", serif;
+}
+

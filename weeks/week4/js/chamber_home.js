@@ -22,7 +22,6 @@ function updateDate(){
 function do_hamburger_functionality(){
     let button = document.querySelector("#hamburger_button");
     let menu = document.querySelector("nav");
-    menu.cla
     let main = document.querySelector("body");
     button.addEventListener("click", () => {menu.classList.toggle("hamburger_show")})
     function remove_hamburger_menu_on_body_click(event){

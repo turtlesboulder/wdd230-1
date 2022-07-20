@@ -1,0 +1,135 @@
+header, footer{
+    background-color: #004010;
+    color: white;
+    text-decoration: none;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+main{
+    margin: 20px;
+}
+header a, footer a{
+    color: white;
+    text-decoration: none;
+}
+header h1{
+    text-align: center;
+}
+#socialMediaLinks{
+    grid-row: 2;
+    display: block;
+    margin-left: auto;
+    margin-top: 3em;
+    margin-right: 20px;
+}
+#socialMediaLinks img{
+    width: 30px;
+    padding: 6px;
+}
+#disclaimer{
+    grid-column: 1/-1;
+    grid-row: 1;
+    text-align: center;
+}
+#footer_link_list{
+    grid-column: 2;
+    grid-row: 2;
+    font-size: 0.9em;
+    padding: 5px; 
+    margin-right: auto;
+    margin-left: 20px;
+}
+#footer_link_list li a{
+    text-decoration: none;
+}
+#footer_link_list li a:hover{
+    text-decoration: underline;
+}
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3em 1fr;
+    padding: 10px;
+}
+
+
+
+@media screen and (max-width: 800px){
+    nav{
+        display: none;
+    }
+    .hamburger_show{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .hamburger_show a{
+        padding: 10px;
+        margin-top: 10px;
+        background-color: #005014;
+        width: 90%;
+        text-align: center;
+        font-size: 1.1em;
+    }
+    .hamburger_show a:hover{
+        background-color: #006018;
+    }
+    header{
+        padding: 5px;
+    }
+    header h1{
+        margin-bottom: 2px;
+    }
+    #hamburger_button{
+        font-size: 3em;
+        display: block;
+        text-align: center;
+    }
+    footer{
+        grid-template-rows: 4em 1fr;
+    }
+}
+@media screen and (min-width: 801px){
+    #hamburger_button{
+        display: none;
+    }
+
+
+    header h1{
+        padding: 20px 0px 10px 0px;
+        margin: 0px 30px;
+        border-bottom: 3px solid #003010;
+        font-size: 3rem;
+    }
+
+    nav{
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        justify-content: center;
+        border-top: 3px solid #003010;
+        margin: 3px 30px 10px;
+        padding: 5px;
+    }
+
+    nav a{
+        font-size: 1.2rem;
+        border: 2px solid #004010;
+        background-color: #005014;
+        padding: 8px 20px;
+        margin: 10px;
+    }
+
+    nav a:hover{
+        background-color: #006018;
+    }
+}
+@media screen and (min-width: 1201px){
+
+}
+
+
+
